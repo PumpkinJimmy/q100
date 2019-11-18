@@ -16,3 +16,13 @@
 8. 最大池化 OK
 9. 高斯滤波 OK
 10. 中值滤波 OK
+11. 均值滤波
+12. Motion Filter
+13. MAX-MIN滤波
+14. 微分滤波
+15. Sobel滤波
+16. Prewitt滤波
+17. Laplacian滤波
+18. Emboss滤波
+19. LoG滤波
+20. 直方图表示
