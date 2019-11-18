@@ -17,7 +17,7 @@ int main(int argc, char** argv)
 	{
 		for (int col = 0; col < img_res.cols; col++)
 		{
-			Vec3b sum(0, 0, 0);
+			Vec3i sum(0, 0, 0);
 			for (int roff = 0; roff < bz && row * bz + roff < img.rows; roff++)
 			{
 				for (int coff = 0; coff < bz && col * bz + coff < img.cols; coff++)
