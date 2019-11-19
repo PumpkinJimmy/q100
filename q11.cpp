@@ -1,0 +1,19 @@
+#include <iostream>
+#include <opencv2/opencv.hpp>
+using namespace std;
+using namespace cv;
+const int bz = 2;
+int main(int argc, char** argv)
+{
+	if (argc != 2)
+	{
+		cout << "Usage: q img" << endl;
+		return 0;
+	}
+	Mat img =imread(argv[1]);
+	imshow("Origin", img);
+	boxFilter(img, img, -1, Size(5, 5));
+	imshow("Box Filter", img);
+	waitKey(0);
+	return 0;
+}
