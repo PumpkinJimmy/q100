@@ -8,8 +8,9 @@ Mat.at
 ### question
 1. 灰度化：imread指定flag或者cvtColor
 2. 二值化：threshold简单粗暴
+   还有神奇的adaptiveThreshold可以根据像素周围的像素自适应调整阈值（但是感觉用好不容易）
 3. HSV：面向用户的颜色模型，指H(色调)S(纯度)V(亮度)
-   在提取颜色上有奇效，配合inRange效果更佳
+   **在提取颜色上有奇效**，配合inRange效果更佳
 4. GaussianBlur, medianBlur, boxFilter 三大低通滤波，降噪
    高斯最佳，保留细节
    中值对付椒盐噪点
